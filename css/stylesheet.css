@@ -1,0 +1,230 @@
+/* Ashley Buchanan
+02/03/2021
+css.html */
+
+ /* a style used before other  style rules to create a consistent look on all browsers  */
+ /*  header, nav, main, and footer styles begin */
+
+ /* universal styles */
+header, nav, main, footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: #113152;
+    color: #fff;
+    font-family:  'Benne', "Times New Roman", serif;
+    font-size: 1em;
+    margin: 0;
+}
+/* table syles */
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+}
+
+table, th, td {
+    border: 0.1em solid #000;
+    background-color:#21609E;
+    
+}
+
+td, th {
+    height: 2em;
+}
+
+th {
+    font-size: 1.2em ;
+}
+
+td {
+    text-align: center;
+}
+
+caption {
+    font-size: 1.5em;
+    margin-top: 100px;
+}
+
+caption, th, td {
+    padding: 8px;
+}
+
+/*  nav styles begin */
+nav {
+   background-color: #21609E;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+}
+
+nav li {
+    font-size: .9em;
+    padding: 15px;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a { 
+    text-decoration: none;
+    color:ivory;
+}
+
+/* form styles begin */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+}
+/*  footer styles begin */
+footer {
+   background-color: #21609E;
+   display: flex;
+   justify-content: center;
+}
+
+p {
+   color: ivory;
+   text-align: center;
+}
+
+h1 {
+    color:ivory;
+}
+
+h2 {
+    color: ivory;
+    text-align: center;
+}
+
+/* home.html style */
+#headshot {
+    display: flex;
+    justify-content: center;
+}
+
+#headshot img{
+    max-width: 75%;
+}
+
+
+/* contact.html style */
+iframe {
+    width: 100%;
+}
+
+#contact {
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+
+/* aboutme.html styles */
+.about_me_header {
+    margin-top: 64px;
+}
+
+#about_me_list ul li {
+    font-size: 1em;
+}
+
+#about_me_list h2{
+    text-shadow: 7px 7px black;
+
+}
+
+/* projects.html styles */
+.projects_header h2 {
+    text-align: center;
+}
+
+.projects_header h1 {
+    text-align: center;
+}
+
+.grid p {
+    color: ivory;
+}
+
+.grid {
+    display: grid;
+}
+/* media query: large mobile styles */
+@media only screen and (min-width: 425px) {
+    nav li {
+        font-size: 1.2em;
+    }
+    p {
+        font-size: 1.2em;
+    }
+    footer {
+        font-size: 1.2em;
+        text-align: center;
+      
+    }
+    #about_me_list ul li {
+        font-size: 1.2em;
+    }
+}
+
+/* media query: tablet styles */
+@media only screen and (min-width: 768px) {
+    #headshot img {
+        max-width: 25%;
+    }
+    nav li {
+        font-size: 1.5em;
+    }
+    p {
+        font-size: 1.5em;
+    }
+    footer {
+        font-size: 1.5em;
+    }
+    #about_me_list ul li {
+        font-size: 1.5em;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    footer {
+        position: fixed;
+        width: 100%;
+        height: 70px;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* media query: laptop/desktop styles */
+@media only screen and (min-width: 1280px) {
+    #headshot img {
+        max-width: 20%;
+    }
+    h2 {
+        font-size: 2.5em;
+    }
+    a:hover {
+        color: black;
+    }
+    #about_me_list div {
+        display: flex;
+        justify-content: center;
+    }
+}
